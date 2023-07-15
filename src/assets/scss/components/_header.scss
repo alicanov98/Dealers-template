@@ -1,0 +1,182 @@
+header {
+    width: 100%;
+    height: 90px;
+    padding: 8px 0;
+    z-index: 1999;
+    position: absolute;
+    top: 0;
+
+    .container {
+        .row {
+            justify-content: space-between;
+            align-items: center;
+
+            .logo {
+                text-transform: uppercase;
+                letter-spacing: 4px;
+                font-size: 22px;
+                font-weight: 700;
+                line-height: 1.7;
+                cursor: pointer;
+
+                a {
+                    color: #000;
+                }
+            }
+
+            nav {
+                .navTitle {
+                    display: none;
+                }
+
+                .navList {
+                    display: flex;
+
+                    .navItem {
+                        display: inline-block;
+                        padding: 20px 15px;
+                        cursor: pointer;
+
+                        a {
+                            transition: .4s all ease;
+                            text-transform: uppercase;
+                            letter-spacing: 1px;
+                            font-size: 15px;
+                            color: #000;
+
+                            &:active {
+                                color: #207dff;
+                            }
+                        }
+
+                        &:hover {
+                            a {
+                                color: #207dff;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .navIcons {
+                display: flex;
+
+                .navIcon {
+                    display: block;
+                    height: 40px;
+                    width: 40px;
+                    line-height: 40px;
+                }
+
+                .shopIcon {
+                    position: relative;
+
+                    .num {
+                        position: absolute;
+                        top: 0;
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 50%;
+                        line-height: 20px;
+                        color: #fff;
+                        font-size: 12px;
+                        font-weight: 500;
+                        background: #207dff;
+                        right: 14px;
+                        text-align: center;
+                    }
+                }
+
+                .bars {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+
+    header {
+        overflow: hidden;
+
+        .container {
+            .row {
+                .logo {
+                    letter-spacing: 5px;
+                    font-size: 20px;
+                }
+
+                nav {
+                    opacity: 0;
+                    position: absolute;
+                    top: 0px;
+                    right: 0px;
+                    background-color: #fff;
+                    z-index: 2000;
+                    width: 300px;
+                    overflow-y: scroll;
+                    padding: 20px;
+                    height: 100vh;
+                    padding-bottom: 150px;
+                    transform: translateX(300px);
+                    visibility: hidden;
+                    transition: .3s all ease-in-out;
+
+                    .navTitle {
+                        display: block;
+                        padding-left: 30px;
+                        display: inline-block;
+                        text-transform: uppercase;
+                        color: #000;
+                        letter-spacing: .2em;
+                        font-size: 22px;
+                        font-weight: 700;
+                        cursor: pointer;
+                    }
+
+                    .navList {
+                        display: flex;
+                        flex-direction: column;
+                        padding-left: 20px;
+                    }
+                }
+
+                .navIcons {
+                    .bars {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+
+    .active {
+        overflow: visible;
+
+        .container {
+            .row {
+                nav {
+                    opacity: 1;
+                    visibility: visible;
+                    position: fixed;
+                    transform: translateX(0);
+                }
+            }
+        }
+    }
+
+    body.overlay-active::before {
+        background: rgba(0, 0, 0, 0.6);
+        content: "";
+        position: absolute;
+        z-index: 1999;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 100vh;
+        opacity: 1;
+        visibility: visible;
+    }
+}

@@ -1,0 +1,119 @@
+.home {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background: #f9f9f9;
+    position: relative;
+    overflow: hidden;
+    z-index: 9;
+    min-height: 700px;
+    height: calc(100vh);
+
+    .container {
+        .row {
+            flex-wrap: wrap;
+            align-items: center;
+
+            .homeContent {
+                text-align: left;
+                flex: 0 0 41.66667%;
+                max-width: 41.66667%;
+                justify-content: center;
+                align-items: center;
+
+                h1 {
+                    font-size: 64px;
+                    letter-spacing: 16px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    margin-bottom: 8px;
+                }
+
+                h4 {
+                    font-size: 16px;
+                    margin-bottom: 8px;
+                    font-weight: 500;
+                    line-height: 1.2;
+                    text-align: center;
+                }
+
+                .price {
+                    justify-content: center;
+                    margin-top: 16px;
+                    margin-bottom: 48px;
+
+                    strong {
+                        font-weight: bolder;
+                        font-size: 32px;
+                        color: #000;
+                        line-height: 1.7;
+                    }
+
+                    del {
+                        line-height: 1, 7;
+                        font-weight: 500;
+                        font-size: 32px;
+                        margin-left: 10px;
+                        color: #6c757d;
+                        text-decoration: line-through;
+                    }
+                }
+
+                .btns {
+                    text-align: center;
+                }
+            }
+
+            .homeImg {
+                text-align: right;
+                flex: 0 0 58.33333%;
+                max-width: 58.33333%;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 992px) {
+    .home {
+        .container {
+            .row {
+                .homeContent {
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                    text-align: center;
+                    h1 {
+                        font-size: 32px;
+                        margin-top: 15%;
+                    }
+                    .price {
+                        strong {
+                            font-size: 25px;
+                        }
+                        del {
+                            font-size: 25px;
+                        }
+                    }
+                    .btns {
+                        text-align: center;
+                    }
+                }
+
+                .homeImg {
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                    text-align: center;
+                    margin-top: 20px;
+                    img {
+                        width: 50%;
+                        vertical-align: middle;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+}

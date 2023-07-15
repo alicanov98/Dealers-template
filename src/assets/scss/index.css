@@ -1,0 +1,114 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.row {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+.header {
+  width: 100%;
+  height: 90px;
+  padding: 8px 0;
+  z-index: 1999;
+  position: absolute;
+  top: 0;
+}
+.header .container .row {
+  justify-content: space-between;
+  align-items: center;
+}
+.header .container .row .logo {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.7;
+  cursor: pointer;
+}
+.header .container .row .logo a {
+  color: #000;
+}
+.header .container .row nav .navList {
+  display: flex;
+}
+.header .container .row nav .navList .navItem {
+  display: inline-block;
+  padding: 20px 15px;
+  cursor: pointer;
+}
+.header .container .row nav .navList .navItem a {
+  transition: 0.4s all ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 15px;
+  color: #000;
+}
+.header .container .row nav .navList .navItem a:active {
+  color: #207dff;
+}
+.header .container .row nav .navList .navItem:hover a {
+  color: #207dff;
+}
+.header .container .row .navIcons {
+  display: flex;
+}
+.header .container .row .navIcons .navIcon {
+  display: block;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+}
+.header .container .row .navIcons .shopIcon {
+  position: relative;
+}
+.header .container .row .navIcons .shopIcon .num {
+  position: absolute;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  line-height: 20px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  background: #207dff;
+  right: 14px;
+  text-align: center;
+}/*# sourceMappingURL=index.css.map */
