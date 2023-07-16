@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faMagnifyingGlass,
@@ -9,7 +9,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import "../assets/scss/components/_header.scss";
 
-export const Header = () => {
+const Header = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   const bodyRef = useRef();
 
@@ -52,16 +52,19 @@ export const Header = () => {
             <h2 className="navTitle">Dealers</h2>
             <ul className="navList">
               <li className="navItem">
-                <NavLink to="/">Collection</NavLink>
+                <Link to="/home">Home</Link>
               </li>
               <li className="navItem">
-                <NavLink to="/">Shop</NavLink>
+                <Link to="/collection">Collection</Link>
               </li>
               <li className="navItem">
-                <NavLink to="/">Catalogs</NavLink>
+                <Link to="/shop">Shop</Link>
               </li>
               <li className="navItem">
-                <NavLink to="/">Contact</NavLink>
+                <Link to="/catalogs">Catalogs</Link>
+              </li>
+              <li className="navItem">
+                <Link to="/contact">Contact</Link>
               </li>
             </ul>
           </nav>
@@ -85,3 +88,5 @@ export const Header = () => {
     </header>
   );
 };
+
+export default Header;

@@ -1,0 +1,40 @@
+.catalog {
+    width: 100%;
+    background-color: #f8f9fa;
+
+    .catalogTitles {
+        .container {
+            padding-top: 90px;
+            padding-bottom: 16px;
+            display: flex;
+
+            .catalogHome {
+                color: #207dff;
+            }
+
+            .catalogColor {
+                color: #000;
+            }
+
+            .catalogTitle {
+                line-height: 1.7;
+                font-weight: 500;
+                font-size: 16px;
+                transition: .3s all ease;
+
+                &:hover {
+                    color: #0058d3;
+                }
+            }
+
+            .catalogTitleLine {
+                margin: 0 8px;
+                line-height: 1.7;
+                color: #8c92a0;
+                font-weight: 500;
+                font-size: 16px;
+                cursor: pointer;
+            }
+        }
+    }
+}

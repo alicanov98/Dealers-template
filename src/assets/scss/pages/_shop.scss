@@ -1,0 +1,40 @@
+.shop {
+    width: 100%;
+    background-color: #f8f9fa;
+
+    .shopTitles {
+        .container {
+            padding-top: 90px;
+            padding-bottom: 16px;
+            display: flex;
+
+            .shopHome {
+                color: #207dff;
+            }
+
+            .shopColor {
+                color: #000;
+            }
+
+            .shopTitle {
+                line-height: 1.7;
+                font-weight: 500;
+                font-size: 16px;
+                transition: .3s all ease;
+
+                &:hover {
+                    color: #0058d3;
+                }
+            }
+
+            .shopTitleLine {
+                margin: 0 8px;
+                line-height: 1.7;
+                color: #8c92a0;
+                font-weight: 500;
+                font-size: 16px;
+                cursor: pointer;
+            }
+        }
+    }
+}
