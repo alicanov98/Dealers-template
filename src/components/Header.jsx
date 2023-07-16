@@ -6,6 +6,8 @@ import {
   faHeart,
   faBagShopping,
   faBars,
+  faChevronDown,
+  faChevronRight,
 } from "@fortawesome/free-solid-svg-icons";
 import "../assets/scss/components/_header.scss";
 
@@ -55,7 +57,19 @@ const Header = () => {
                 <Link to="/home">Home</Link>
               </li>
               <li className="navItem">
-                <Link to="/collection">Collection</Link>
+                <Link to="/collection">Collection <FontAwesomeIcon icon={faChevronDown} /></Link>
+                <ul className="dropdown">
+                  <li className="dropdownItem">Men</li>
+                  <li className="dropdownItem">Women</li>
+                  <li className="dropdownItem">Children</li>
+                  <li className="dropdownItem" id="subMenu">Sub Menu <FontAwesomeIcon className="rightIcon" icon={faChevronRight} />
+                  <ul className="dropdownTwo">
+                    <li className="dropdownItemTwo">Men</li>
+                    <li className="dropdownItemTwo">Women</li>
+                    <li className="dropdownItemTwo">Children</li>
+                  </ul>
+                  </li>
+                </ul>
               </li>
               <li className="navItem">
                 <Link to="/shop">Shop</Link>
