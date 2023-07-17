@@ -48,13 +48,13 @@ const Header = () => {
       <div className="container">
         <div className="row">
           <div className="logo">
-            <Link>Dealers</Link>
+            <Link to="/">Dealers</Link>
           </div>
           <nav>
             <h2 className="navTitle">Dealers</h2>
             <ul className="navList">
               <li className="navItem">
-                <Link to="/home">Home</Link>
+                <Link to="/">Home</Link>
               </li>
               <li className="navItem">
                 <Link to="/collection">Collection <FontAwesomeIcon icon={faChevronDown} /></Link>
