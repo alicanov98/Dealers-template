@@ -169,7 +169,7 @@ header {
 
     header {
         overflow: hidden;
-
+z-index: 3000;
         .container {
             .row {
                 .logo {
@@ -183,7 +183,7 @@ header {
                     top: 0px;
                     right: 0px;
                     background-color: #fff;
-                    z-index: 2000;
+                    z-index: 1999;
                     width: 300px;
                     overflow-y: scroll;
                     padding: 20px;
@@ -240,7 +240,7 @@ header {
         background: rgba(0, 0, 0, 0.6);
         content: "";
         position: absolute;
-        z-index: 1999;
+        z-index:2001;
         top: 0;
         left: 0;
         right: 0;
