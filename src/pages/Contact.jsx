@@ -7,7 +7,7 @@ const Contact = () => {
       <div className="img"></div>
       <div className="contactTitles">
         <div className="container">
-          <Link to="/home" className="contactHome title">
+          <Link to="/" className="contactHome title">
             Home
           </Link>
           <span className="line title">/</span>

@@ -6,7 +6,7 @@ const Shop = () => {
     <section className="shop">
       <div className="shopTitles">
         <div className="container">
-          <Link className="shopHome shopTitle" to="/home">
+          <Link className="shopHome shopTitle" to="/">
             Home
           </Link>
           <span className="shopTitleLine">/</span>
