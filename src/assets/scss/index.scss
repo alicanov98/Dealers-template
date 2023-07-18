@@ -1,5 +1,9 @@
 // pages
 @import "./pages/home";
+@import "./pages/catalogs";
+@import "./pages/collections";
+@import "./pages/contact";
+@import "./pages/shop";
 
 // Global Styale
 @import "./base";
@@ -7,4 +11,5 @@
 // Components
 @import "./components/button";
 @import "./components/footer";
-@import "./components/header"
+@import "./components/header";
+@import "./components/card";
