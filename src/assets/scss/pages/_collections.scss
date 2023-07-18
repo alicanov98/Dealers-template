@@ -1,11 +1,10 @@
 .collection {
-    margin: 200px 0;
+    margin: 100px 0;
     width: 100%;
     text-align: center;
-
     .container {
         .title {
-            padding-bottom: 20px;
+            padding-bottom: 100px;
             display: inline-block;
             color: #000;
             font-size: 25px;
@@ -15,65 +14,8 @@
             text-transform: uppercase;
             font-family: inherit;
         }
-
         .cardBox {
             display: flex;
-
-            .card {
-                position: relative;
-                width: 346.667px;
-                margin-right: 20px;
-                border: 1px solid #eee;
-                cursor: pointer;
-
-                &:hover {
-                    img {
-                        transform: scale(0.8);
-                    }
-                }
-
-                img {
-                    width: 100%;
-                    object-fit: cover;
-                    vertical-align: middle;
-                    transition: .3s all ease;
-                    transform: scale(1);
-                }
-
-                .cardCont {
-                    position: absolute;
-                    bottom: 0;
-                    z-index: 2;
-                    width: 100%;
-                    transform: translateY(-50%);
-                    display: flex;
-                    flex-direction: column;
-
-                    h3,
-                    .productPrice {
-                        color: #000;
-                        font-size: 24px;
-                        margin-bottom: 8px;
-                        font-family: inherit;
-                        font-weight: 500;
-                        line-height: 1.2;
-
-                        .delPrice {
-                            color: #adb5bd;
-                            margin-left: 2%;
-                            text-decoration: line-through;
-                        }
-                    }
-
-                    .productTitle {
-                        color: gray;
-                        text-align: center;
-                        line-height: 1.7;
-                        font-weight: 500;
-                        font-size: 16px;
-                    }
-                }
-            }
         }
     }
 }

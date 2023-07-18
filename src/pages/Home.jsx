@@ -11,8 +11,8 @@ const Home = () => {
     <>
       <HomeHero />
       <Products />
-      <Collection />
       <NewCollection src={Woman} desc="Jacket" />
+      <Collection />
       <NewCollection src={Man} desc="NEW DENIM COAT" />
     </>
   );

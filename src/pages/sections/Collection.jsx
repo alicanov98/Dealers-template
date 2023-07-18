@@ -2,8 +2,9 @@ import React from "react";
 import { Card } from "../../components/Card";
 
 import contents from "../../Content";
+
 // Import Swiper React components
-// import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
@@ -20,16 +21,36 @@ const Collection = () => {
           <h2>Collections</h2>
         </div>
         <div className="cardBox">
-          {contents.map((content) => (
-            <Card
-              key={content.id}
-              image={content.image}
-              productName={content.productName}
-              productType={content.productType}
-              price={content.price}
-              oldPrice={content.oldPrice}
-            />
-          ))}
+          <Swiper
+            slidesPerView={3}
+            spaceBetween={30}
+            pagination={{
+              clickable: true,
+            }}
+            loop={{
+              loop: true,
+            }}
+            className="mySwiper"
+          >
+            {contents.map((content) => (
+              <SwiperSlide>
+                <Card
+                  key={content.id}
+                  image={content.image}
+                  productName={
+                    content.productName === "Jacobs Bag" ? (
+                      <h4 className="saleCard">Sale</h4>
+                    ) : (
+                      " "
+                    )
+                  }
+                  productType={content.productType}
+                  price={content.price}
+                  oldPrice={content.oldPrice}
+                />
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
       </div>
     </section>
