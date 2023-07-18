@@ -1,8 +1,13 @@
-import "../assets/scss/pages/_home.scss";
+import Collection from "./sections/Collection";
 import HomeHero from "./sections/HomeHero";
 
 const Home = () => {
-  return <HomeHero />;
+  return (
+    <>
+      <HomeHero />
+      <Collection/>
+    </>
+  );
 };
 
 export default Home;

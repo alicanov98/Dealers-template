@@ -9,7 +9,7 @@ import {
   faChevronDown,
   faChevronRight,
 } from "@fortawesome/free-solid-svg-icons";
-import "../assets/scss/components/_header.scss";
+
 
 const Header = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -57,7 +57,7 @@ const Header = () => {
                 <Link to="/">Home</Link>
               </li>
               <li className="navItem">
-                <Link to="/collection">Collection <FontAwesomeIcon icon={faChevronDown} /></Link>
+                <Link to="/">Collection <FontAwesomeIcon icon={faChevronDown} /></Link>
                 <ul className="dropdown">
                   <li className="dropdownItem">Men</li>
                   <li className="dropdownItem">Women</li>

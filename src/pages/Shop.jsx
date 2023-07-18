@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../assets/scss/pages/_shop.scss";
 
 const Shop = () => {
   return (
