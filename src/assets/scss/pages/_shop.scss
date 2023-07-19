@@ -37,4 +37,20 @@
             }
         }
     }
+
+    .container {
+        .row {
+            flex-wrap: wrap;
+
+            .shopLeft {
+                flex: 0 0 75%;
+                max-width: 75%;
+            }
+
+            .shopRight {
+                flex: 0 0 25%;
+                max-width: 25%;
+            }
+        }
+    }
 }

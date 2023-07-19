@@ -125,6 +125,7 @@
           border-radius: 5px;
           outline: none;
           transition: all 0.4s ease-in-out;
+          resize: none;
           &:focus,
           &:active {
             border: 1px solid #207dff;
