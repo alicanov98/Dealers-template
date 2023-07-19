@@ -1,10 +1,19 @@
 // pages
 @import "./pages/home";
+@import "./pages/catalogs";
+@import "./pages/collections";
+@import "./pages/contact";
+@import "./pages/shop";
 
 // Global Styale
 @import "./base";
 
+// Section Style
+@import "./components/newcollection";
+@import "./components/products";
+
 // Components
 @import "./components/button";
 @import "./components/footer";
-@import "./components/header"
+@import "./components/header";
+@import "./components/card";
