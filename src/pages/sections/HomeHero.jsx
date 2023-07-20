@@ -14,7 +14,7 @@ const HomeHero = () => {
               <del>$1,999</del>
             </div>
             <div className="btns">
-              <Button variant="btnOne" />
+              <Button variant="btnOne"/>
               <Button variant="btn" />
             </div>
           </div>
