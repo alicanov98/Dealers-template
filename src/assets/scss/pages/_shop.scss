@@ -45,11 +45,42 @@
             .shopLeft {
                 flex: 0 0 75%;
                 max-width: 75%;
+
+                .row {
+                    .shopLeftTitle {
+                        margin-bottom: 48px;
+
+                        .allShopTitle {
+                            color: #000;
+                            font-size: 20px;
+                            font-weight: 500;
+                            line-height: 1.2;
+                            margin-bottom: 8px;
+                        }
+
+                        // .filterShop {
+                        //     .row {
+                        //         .filterDropdown {
+                        //             .filterDropdownList {
+                        //                 display: none;
+                        //             }
+                        //         }
+                        //     }
+                        // }
+                    }
+                }
             }
 
             .shopRight {
                 flex: 0 0 25%;
                 max-width: 25%;
+
+                .shopCatagories {
+                    padding: 24px;
+                    margin-bottom: 24px;
+
+                    border: 1px solid #eee {}
+                }
             }
         }
     }

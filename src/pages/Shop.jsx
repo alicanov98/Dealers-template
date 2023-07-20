@@ -19,18 +19,29 @@ const Shop = () => {
         <div className="row">
           <div className="shopLeft">
             <div className="shopLeftTitle">
-              <h4>Shop All</h4>
-              <div className="filterShop">
-                <select>
-                  <option value="1">Men</option>
-                  <option value="2">Women</option>
-                  <option value="3">Children</option>
-                </select>
-                <select>
-                  <option value="1">Referance</option>
-                  <option value="2">Name, A to Z</option>
-                  <option value="3">Name, Z to A</option>
-                </select>
+              <div className="row">
+                <h4 className="allShopTitle">Shop All</h4>
+                <div className="filterShop">
+                  <div className="row">
+                  {/* <div className="filterDropdown">
+                  <Button variant="filterDropdownBtn"/>
+                  <ul className="filterDropdownList">
+                    <li className="filterDropdownItem">Men</li>
+                    <li className="filterDropdownItem">Women</li>
+                    <li className="filterDropdownItem">Children</li>
+                  </ul>
+                  </div>
+                  <div className="filterDropdown">
+                  <Button variant="filterDropdownBtn"/>
+                  <ul className="filterDropdownList">
+                    <li className="filterDropdownItem">Referance</li>
+                    <li className="filterDropdownItem">Name, A to Z</li>
+                    <li className="filterDropdownItem">Name, Z to A</li>
+                  </ul>
+                  </div> */}
+                  </div>
+
+                </div>
               </div>
             </div>
             <div className="products">
@@ -56,7 +67,7 @@ const Shop = () => {
           </div>
           <div className="shopRight">
             <div className="shopCatagories">
-              <h4>Categories</h4>
+              <h4 className="titleRight">Categories</h4>
               <ul className="categoriesList">
                 <li className="categoriesItem">
                   <Link>Men</Link>
@@ -73,13 +84,13 @@ const Shop = () => {
               </ul>
             </div>
             <div className="filterPrice">
-              <h4>Filter by price</h4>
+              <h4 className="titleRight">Filter by price</h4>
               <input type="radio" />
               <span>$0</span>
               <span>-</span>
               <span>$486</span>
             </div>
-            <h4>Size</h4>
+            <h4 className="titleRight">Size</h4>
             <ul className="sizeList">
               <li className="sizeItem">
                 <input type="checkbox" />
@@ -94,7 +105,7 @@ const Shop = () => {
                 Large (1,392)
               </li>
             </ul>
-            <h4>Color</h4>
+            <h4 className="titleRight">Color</h4>
             <ul className="colorList">
               <li className="colorItem">
                 <span className="color" id="red"></span>
