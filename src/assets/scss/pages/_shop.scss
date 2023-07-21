@@ -1,8 +1,9 @@
 .shop {
     width: 100%;
-    background-color: #f8f9fa;
 
     .shopTitles {
+        background-color: #f8f9fa;
+
         .container {
             padding-top: 90px;
             padding-bottom: 16px;
@@ -39,47 +40,163 @@
     }
 
     .container {
+        padding: 80px 0;
+
         .row {
             flex-wrap: wrap;
+            justify-content: space-between;
 
             .shopLeft {
                 flex: 0 0 75%;
                 max-width: 75%;
+                padding: 0 15px;
 
-                .row {
-                    .shopLeftTitle {
-                        margin-bottom: 48px;
+                .shopLeftTitle {
+                    margin-bottom: 48px;
 
-                        .allShopTitle {
-                            color: #000;
-                            font-size: 20px;
-                            font-weight: 500;
-                            line-height: 1.2;
-                            margin-bottom: 8px;
+                    .allShopTitle {
+                        color: #000;
+                        font-size: 20px;
+                        font-weight: 500;
+                        line-height: 1.2;
+                        margin-bottom: 8px;
+                    }
+
+                    .filterShop {
+                        .row {
+                            .filterDropdown {
+                                .filterDropdownBtn {
+                                    height: 43px;
+                                    padding: 0 24px;
+                                    background-color: #000;
+                                    cursor: pointer;
+                                    transition: .3s all ease-in-out;
+                                    text-transform: uppercase;
+                                    font-size: 14px;
+                                    border: 1px solid transparent;
+                                    overflow: visible;
+                                    background-color: #f0f0f0;
+                                    line-height: 1.5;
+                                    border-radius: 3.2px;
+                                    color: #000;
+                                    font-weight: 500;
+                                    margin-right: 5px;
+                                }
+
+                                .filterDropdownList {
+                                    display: none;
+                                    position: absolute;
+                                    float: left;
+                                    min-width: 160px;
+                                    padding: 8px 0;
+                                    margin: 2px 0 0;
+                                    font-size: 16px;
+                                    color: #212529;
+                                    text-align: left;
+                                    list-style: none;
+                                    background-color: #fff;
+                                    background-clip: padding-box;
+                                    border: 1px solid rgba(0, 0, 0, 0.15);
+                                    border-radius: 4px;
+                                    z-index: 1000;
+                                }
+                                .active{
+                                    display: block;
+                                }
+                            }
                         }
-
-                        // .filterShop {
-                        //     .row {
-                        //         .filterDropdown {
-                        //             .filterDropdownList {
-                        //                 display: none;
-                        //             }
-                        //         }
-                        //     }
-                        // }
                     }
                 }
+                .products{
+                    grid-template-columns: repeat(2, 1fr);
+                }
+
             }
 
             .shopRight {
                 flex: 0 0 25%;
                 max-width: 25%;
+                padding: 0 15px;
 
                 .shopCatagories {
-                    padding: 24px;
                     margin-bottom: 24px;
+                    padding: 24px;
+                    border: 1px solid #eee;
 
-                    border: 1px solid #eee {}
+                    .categoriesList {
+                        .categoriesItem {
+                            display: flex;
+                            justify-content: space-between;
+
+                            a {
+                                transition: .4s ease;
+                                color: #207dff;
+                                cursor: pointer;
+                                font-weight: 500;
+                                margin-bottom: 10px;
+
+                                &:hover {
+                                    color: #0058d3;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .leftBottom {
+                    padding: 24px;
+                    border: 1px solid #eee;
+
+                    .filterPrice {
+                        margin-bottom: 24px;
+                    }
+
+                    .sizeList {
+                        margin-bottom: 24px;
+
+                        .sizeItem {
+                            display: flex;
+                            margin-bottom: 8px;
+                            color: #000;
+                            font-size: 17px;
+                            font-weight: 500;
+
+                            input {
+                                margin-right: 8px;
+                                margin-top: 4px;
+                            }
+
+                        }
+                    }
+
+                    .colorList {
+                        .colorItem {
+
+                            .color {
+                                display: inline-block;
+                                width: 14px;
+                                height: 14px;
+                                border-radius: 50%;
+                                margin-right: 8px;
+                            }
+
+                            #red {
+                                background-color: red;
+                            }
+
+                            #green {
+                                background-color: green;
+                            }
+
+                            #blue {
+                                background-color: blue;
+                            }
+
+                            #purple {
+                                background-color: purple;
+                            }
+                        }
+                    }
                 }
             }
         }

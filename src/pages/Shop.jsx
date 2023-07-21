@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import data from "../assets/data/data.json";
+import {Button} from '../components/Button'
 const Shop = () => {
   return (
     <section className="shop">
@@ -23,24 +24,23 @@ const Shop = () => {
                 <h4 className="allShopTitle">Shop All</h4>
                 <div className="filterShop">
                   <div className="row">
-                  {/* <div className="filterDropdown">
-                  <Button variant="filterDropdownBtn"/>
-                  <ul className="filterDropdownList">
+                  <div className="filterDropdown">
+                  <Button variant="filterDropdownBtn" text="LATEST"/>
+                  <ul className="filterDropdownList" >
                     <li className="filterDropdownItem">Men</li>
                     <li className="filterDropdownItem">Women</li>
                     <li className="filterDropdownItem">Children</li>
                   </ul>
                   </div>
                   <div className="filterDropdown">
-                  <Button variant="filterDropdownBtn"/>
+                  <Button variant="filterDropdownBtn" text="Referance" />
                   <ul className="filterDropdownList">
                     <li className="filterDropdownItem">Referance</li>
                     <li className="filterDropdownItem">Name, A to Z</li>
                     <li className="filterDropdownItem">Name, Z to A</li>
                   </ul>
-                  </div> */}
                   </div>
-
+                  </div>
                 </div>
               </div>
             </div>
@@ -74,21 +74,24 @@ const Shop = () => {
                   <span>(2,220)</span>
                 </li>
                 <li className="categoriesItem">
-                  <Link>Men</Link>
+                  <Link>Women</Link>
                   <span>(2,220)</span>
                 </li>
                 <li className="categoriesItem">
-                  <Link>Men</Link>
+                  <Link>Children</Link>
                   <span>(2,220)</span>
                 </li>
               </ul>
             </div>
+            <div className="leftBottom">       
             <div className="filterPrice">
               <h4 className="titleRight">Filter by price</h4>
-              <input type="radio" />
-              <span>$0</span>
-              <span>-</span>
+              <input type="range" />
+             <div className="price">
+             <span>$0</span>
+              <span> - </span>
               <span>$486</span>
+             </div>
             </div>
             <h4 className="titleRight">Size</h4>
             <ul className="sizeList">
@@ -124,6 +127,7 @@ const Shop = () => {
                 Purple (1,075)
               </li>
             </ul>
+            </div>
           </div>
         </div>
       </div>

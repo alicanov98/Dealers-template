@@ -1,3 +1,3 @@
-export const Button = (props) => {
-  return <button className={props.variant}>Shop Now</button>;
+export const Button = ({variant,text,onClick}) => {
+  return <button className={variant} onClick={onClick}>{text}</button>;
 };
