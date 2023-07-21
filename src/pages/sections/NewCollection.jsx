@@ -1,3 +1,5 @@
+import { Button } from "../../components/Button";
+
 const NewCollection = ({ src, desc }) => {
   return (
     <section className="newCollection">
@@ -7,7 +9,7 @@ const NewCollection = ({ src, desc }) => {
       <div className="collection_desc">
         <p>#NEW SUMMER COLLECTION 2019</p>
         <h1>{desc}</h1>
-        <button>SHOP NOW</button>
+        <Button text="Shop Now"/>
       </div>
     </section>
   );
