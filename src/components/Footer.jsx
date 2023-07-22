@@ -1,9 +1,10 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
+import { 
   faEnvelope,
   faPhone,
   faLocationDot,
 } from "@fortawesome/free-solid-svg-icons";
+import {Link} from "react-router-dom";
 const Footer = () => {
   return (
     <footer>
@@ -27,41 +28,41 @@ const Footer = () => {
             <div>
               <ul>
                 <li>
-                  <a href="#">Sell online</a>
+                  <Link href="#">Sell online</Link>
                 </li>
                 <li>
-                  <a href="#">Features</a>
+                  <Link href="#">Features</Link>
                 </li>
                 <li>
-                  <a href="#">Shopping cart</a>
+                  <Link href="#">Shopping cart</Link>
                 </li>
                 <li>
-                  <a href="#">Store builder</a>
-                </li>
-              </ul>
-              <ul>
-                <li>
-                  <a href="#">Mobile commerce</a>
-                </li>
-                <li>
-                  <a href="#">Dropshipping</a>
-                </li>
-                <li>
-                  <a href="#">Shopping cart</a>
-                </li>
-                <li>
-                  <a href="#">Website development</a>
+                  <Link href="#">Store builder</Link>
                 </li>
               </ul>
               <ul>
                 <li>
-                  <a href="#">Point of sale</a>
+                  <Link href="#">Mobile commerce</Link>
                 </li>
                 <li>
-                  <a href="#">Hardware</a>
+                  <Link href="#">Dropshipping</Link>
                 </li>
                 <li>
-                  <a href="#">Software</a>
+                  <Link href="#">Shopping cart</Link>
+                </li>
+                <li>
+                  <Link href="#">Website development</Link>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <Link href="#">Point of sale</Link>
+                </li>
+                <li>
+                  <Link href="#">Hardware</Link>
+                </li>
+                <li>
+                  <Link href="#">Software</Link>
                 </li>
               </ul>
             </div>
