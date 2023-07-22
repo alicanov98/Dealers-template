@@ -1,9 +1,10 @@
-import data from "../../assets/data/data.json";
+import data from "../../assets/data/data";
+
 const Products = () => {
   return (
     <section className="products">
-      {data.products.map((product, index) => (
-        <div key={index} className="product">
+      {data.map((product, key) => (
+        <div key={product.id} className="product">
           {product.title === "Marc Jacobs Bag" ? <h4>SALE</h4> : ""}
           <div className="product_img">
             <img src={product.imgSrc} alt={product.title} />

@@ -32,14 +32,13 @@ const Collection = () => {
             }}
             className="mySwiper"
           >
-            {contents.map((content) => (
-              <SwiperSlide>
+            {contents.map((content, index) => (
+              <SwiperSlide key={index}>
                 <Card
-                  key={content.id}
                   image={content.image}
                   productName={
                     content.productName === "Jacobs Bag" ? (
-                      <h4 className="saleCard">Sale</h4>
+                      <span className="saleCard">Sale</span>
                     ) : (
                       " "
                     )
